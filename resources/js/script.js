@@ -114,4 +114,22 @@ $(document).ready(function(){
             icon.removeClass('ion-close-round');
         }
     });
+
+    /* Maps */
+    var map = new GMaps({
+        div: '.map',
+        lat: 59.9195342,
+        lng: 10.9,
+        zoom: 12
+    });
+
+    map.addMarker({
+        lat: 59.9195342,
+        lng: 10.791379,
+        title: 'Oslo',
+        infoWindow: {
+            content: '<p>Our Oslo HQ</p>'
+        }
+    });
+
 });
